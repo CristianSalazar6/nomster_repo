@@ -2,7 +2,7 @@ class PlacesController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create]
 
   def index
-    @places = Place.all
+    @places = Place.page(params[:page]).per(3)
   end
 
   def new 
