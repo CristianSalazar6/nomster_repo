@@ -74,3 +74,7 @@ source 'https://rails-assets.org' do
 end
 
 gem 'kaminari'
+
+gem "geocoder"
+
+gem "figaro"
